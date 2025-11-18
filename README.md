@@ -1,0 +1,2 @@
+# Verti HTML5 UP SCSS
+
