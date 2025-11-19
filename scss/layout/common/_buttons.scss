@@ -1,15 +1,21 @@
 @use "../../variables/general";
+@use "../../mixins/mixins";
 
 .btn{
   padding: 10px 20px;
+  margin: 10px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   background-color: general.$secondary-color;
   color: general.$white-color;
   text-decoration: none;
   font-weight: 700;
-  display: block; //da v vsakem primeru nekje prikaže gumb
   border-radius: 5px;
-  margin: 10px 0;
-  text-align: center;
+  @include mixins.mobile(){
+    justify-content: center;
+    flex-direction: row-reverse;
+  }
 }
 
 .btn-large{
