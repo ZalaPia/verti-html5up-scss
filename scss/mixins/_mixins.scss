@@ -6,6 +6,12 @@
   }
 }
 
+@mixin tablet-portrait (){  // funkcija za spremenljivko širine zaslona za tablet portrait
+  @media #{general.$tablet-portrait}{
+    @content;
+  }
+}
+
 @mixin tablet (){   // funkcija za spremenljivko širine zaslona za tablet
   @media #{general.$tablet}{
     @content;

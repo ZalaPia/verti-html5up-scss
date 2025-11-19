@@ -7,20 +7,24 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 20px;
+  border-radius: 5px;
   background-color: general.$secondary-color;
   color: general.$white-color;
   text-decoration: none;
-  font-weight: 700;
-  border-radius: 5px;
-  @include mixins.mobile(){
+  font-weight: 800;
+  width: 100%;
+  @include mixins.tablet-portrait(){
     justify-content: center;
     flex-direction: row-reverse;
   }
 }
 
 .btn-large{
-  padding: 25px 40px;
+  padding: 25px 20px;
   font-size: 2.25em;
+  @include mixins.tablet() {font-size: 1.75em;}
+  @include mixins.tablet-portrait() {font-size: 1.7em;}
 }
 
 .btn-primary{
@@ -34,3 +38,4 @@
 }
 
 //TODO btn-medium, btn-small
+
