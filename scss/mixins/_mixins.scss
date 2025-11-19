@@ -1,0 +1,19 @@
+@use "../variables/general";
+
+@mixin mobile (){  // funkcija za spremenljivko širine zaslona za mobile
+  @media #{general.$mobile}{
+    @content;
+  }
+}
+
+@mixin tablet (){   // funkcija za spremenljivko širine zaslona za tablet
+  @media #{general.$tablet}{
+    @content;
+  }
+}
+
+@mixin desktop (){   // funkcija za spremenljivko širine zaslona za desktop
+  @media #{general.$desktop}{
+    @content;
+  }
+}
