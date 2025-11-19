@@ -1,0 +1,30 @@
+@use "../../variables/general";
+
+.btn{
+  padding: 10px 20px;
+  background-color: general.$secondary-color;
+  color: general.$white-color;
+  text-decoration: none;
+  font-weight: 700;
+  display: block; //da v vsakem primeru nekje prikaže gumb
+  border-radius: 5px;
+  margin: 10px 0;
+  text-align: center;
+}
+
+.btn-large{
+  padding: 25px 40px;
+  font-size: 2.25em;
+}
+
+.btn-primary{
+  background-color: general.$secondary-color;
+  color: general.$white-color;
+}
+
+.btn-secondary{
+  background-color: general.$background-color;
+  color: general.$primary-color;
+}
+
+//TODO btn-medium, btn-small
